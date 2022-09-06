@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpbDataSourceConfig">
+    <data-sources>
+      <data-source id="6a5e5f57-e912-46c9-a5d3-82797ec6d6e7" name="maven_hibernate" url="jdbc:postgresql://192.168.43.184/BankDB" driverClass="org.postgresql.Driver" />
+    </data-sources>
+  </component>
+</project>
