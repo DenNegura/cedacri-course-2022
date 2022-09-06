@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping">
+
+    <class name="com.Bank.data.Card" table="bank_card">
+        <id name="idCard" column="id_card">
+                <generator class="increment"/>
+        </id>
+        <property name="type" column="type"/>
+        <property name="dateIssue" column="date_issue"/>
+
+        <many-to-one name="client" column="id_client"
+                     class="com.Bank.data.Client"
+                     cascade="save-update" />
+    </class>
+</hibernate-mapping>
