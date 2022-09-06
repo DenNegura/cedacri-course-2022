@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/>
+    <context:component-scan base-package="com.baeldung.applicationcontext"/>
+
+    <context:property-placeholder location="classpath:application.properties"/>
+
+
+    <!--  бин table  -->
+    <bean id="table"
+        class="com.springboot.spboot.objectsDatabase.Table">
+        <property name="name" value="Clients"/>
+    </bean>
+
+
+    <!--  бин database  -->
+    <!--  Внедение зависимости через конструктор  -->
+
+<!--    <bean id="database"-->
+<!--        class="com.springboot.spboot.Database">-->
+<!--        <constructor-arg ref="table"/>-->
+<!--        <property name="name" value="Store"/>-->
+<!--    </bean>-->
+
+
+    <!--  Внедение зависимости через setter  -->
+
+<!--    <bean id="database"-->
+<!--          class="com.springboot.spboot.Database">-->
+<!--        <property name="table" ref="table"/>-->
+<!--        <property name="name" value="Store"/>-->
+<!--    </bean>-->
+
+
+    <!--  Внедение значений через файл  -->
+
+<!--    <bean id="database"-->
+<!--          class="com.springboot.spboot.Database">-->
+<!--        <property name="table" ref="table"/>-->
+<!--        <property name="name" value="${database.name}"/>-->
+<!--    </bean>-->
+
+
+    <!--  область видимости scope prototype  -->
+    <bean id="database"
+          class="com.springboot.spboot.Database"
+          scope="prototype">
+        <property name="table" ref="table"/>
+        <property name="name" value="${database.name}"/>
+    </bean>
+
+</beans>
