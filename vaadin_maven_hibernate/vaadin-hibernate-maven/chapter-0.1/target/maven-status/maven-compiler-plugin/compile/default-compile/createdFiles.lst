@@ -1,0 +1,7 @@
+org/company/DAO/DAO.class
+org/company/AppShell.class
+org/company/MainView.class
+org/company/components/EmployeeEditor$ChangerHandler.class
+org/company/components/EmployeeEditor.class
+org/company/DAO/EmployeeDAO.class
+org/company/database/Employee.class

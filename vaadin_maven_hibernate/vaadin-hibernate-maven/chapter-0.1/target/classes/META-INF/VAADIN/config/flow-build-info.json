@@ -1,0 +1,18 @@
+{
+  "productionMode": false,
+  "useDeprecatedV14Bootstrapping": false,
+  "eagerServerLoad": false,
+  "npmFolder": "/home/denis/vaadin-hibernate-maven/chapter-0.1",
+  "node.version": "v16.14.2",
+  "node.download.root": "https://nodejs.org/dist/",
+  "generatedFolder": "/home/denis/vaadin-hibernate-maven/chapter-0.1/target/frontend",
+  "frontendFolder": "/home/denis/vaadin-hibernate-maven/chapter-0.1/frontend",
+  "connect.javaSourceFolder": "/home/denis/vaadin-hibernate-maven/chapter-0.1/src/main/java",
+  "javaResourceFolder": "/home/denis/vaadin-hibernate-maven/chapter-0.1/src/main/resources",
+  "connect.applicationProperties": "/home/denis/vaadin-hibernate-maven/chapter-0.1/src/main/resources/application.properties",
+  "connect.openApiFile": "/home/denis/vaadin-hibernate-maven/chapter-0.1/target/generated-resources/openapi.json",
+  "project.frontend.generated": "/home/denis/vaadin-hibernate-maven/chapter-0.1/frontend/generated",
+  "pnpm.enable": false,
+  "require.home.node": false,
+  "build.folder": "target"
+}

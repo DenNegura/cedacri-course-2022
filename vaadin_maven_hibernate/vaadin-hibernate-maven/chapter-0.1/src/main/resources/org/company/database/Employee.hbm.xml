@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping">
+
+    <class name="org.company.database.Employee" table="employee">
+        <id name="idEmp" column="id_emp"/>
+        <property name="name" column="name"/>
+        <property name="surname" column="surname"/>
+        <property name="email" column="email"/>
+        <property name="salary" column="salary"/>
+    </class>
+</hibernate-mapping>
